@@ -1,0 +1,167 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+// image gallery css start
+.career-top{
+    
+    height: 514px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .career-wrap{
+        height: 100%;
+        .search-form-wrap{
+
+            .heading{
+                color: $white;
+                font-size: 115px;
+                font-weight: 700;
+                text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            }
+            
+
+
+        }
+    }
+
+    
+}
+
+.find-job{
+    background: #FFC191;
+    padding: 15px;
+    .sub-heading{
+        color: $dark;
+        font-size: 37px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+
+.career{
+    background: #FFE9D8;
+
+    .career-filters{
+        margin-bottom: 32px;
+
+        .btn{
+            background: none;
+            color: $deep;
+            margin-left: -50px;
+        }
+
+        .form-select{
+            font-size: 12px;
+            height: 100%;
+        }
+    }
+
+    .career-card-wrap{
+        background: $white;
+        padding-top: 10px;
+
+        hr{
+            &:last-child{display: none;}
+        }
+        
+        .career-card{
+            padding: 16px 24px;
+            .title{
+                font-size: 18px;
+                font-weight: 900;
+            }
+
+            .text{font-size: 14px;}
+    
+            .text-link{font-size: 14px;}
+        }
+    }
+    
+}
+
+
+
+
+.career-details{
+    background: #FFE9D8;
+    .apply-heading{margin-bottom: 40px; font-size: 36px; font-weight: 900;}
+    .job-info{
+        .card-title{
+            margin-bottom: 16px;
+            font-weight: 400;
+            .job-heading{
+                font-weight: 600;
+            }
+        }
+
+        ul{
+            list-style-type: disc;
+            padding-left: 16px;
+        }
+    }
+
+    .apply-form{
+        background: $white;
+        border: 1px solid $deep;
+        padding: 36px;
+        border-radius: 4px;
+
+        .form-control{
+            height: 45px;
+        }
+
+        form{
+            
+            
+            
+            
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .career-top{
+    
+        height: 324px;
+    }
+}
+@media (max-width: 992px) {
+    .career-top{
+    
+        height: 224px;
+    }
+
+    .career{
+        .career-card{
+            .title{
+                font-size: 18px;
+            }
+    
+            .text-link{font-size: 12px;}
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .career-top{
+    
+        height: 180px;
+    }
+
+    .career{
+        .career-card{
+            .title{
+                font-size: 16px;
+                margin-bottom: 8px !important;
+            }
+    
+            // .text-link{font-size: 12px;}
+        }
+    }
+    
+}

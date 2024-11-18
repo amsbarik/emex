@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap cdn css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- custom css link  -->
+     <link rel="stylesheet" href="assets/css/style.min.css">
+
+
+    <title>Home</title>
+
+
+</head>
+<body>
+    
+    <!--Main Navigation start-->
+    <header>
+        <!-- Navbar top start-->
+    
+        <!-- main categories start -->
+        <nav class="navbar navbar-expand-lg p-0  ">
+            <div class="container">
+
+                <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="hidden-l">
+                    <a class="navbar-brand " href="index.html" >
+                        <img src="assets/img/logo.png" class="object-fit-cover logo-sm" alt="logo">
+                    </a>
+                </div>
+                
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body overflow-visible">
+
+                     
+                                
+                        <!-- main categories  -->
+                        <ul class="navbar-nav main-categories justify-content-center flex-grow-1 me-4" style="margin-top: 11px;">
+
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="index.html"> Home </a>
+                                
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> About Us <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="about_us.html" class="text-uppercase ">About Empex</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="md_message.html" class="text-uppercase ">Message From MD</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="management.html" class="text-uppercase ">Our Management</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="clients.html" class="text-uppercase ">Our Clients</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> Products <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Item 1
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <!-- sub sub category start  -->
+                                        <ul class="sub-sub-categories">
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
+                                        </ul>
+                                        <!-- sub sub category end  -->
+                                    </a></li>
+
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 2
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <!-- sub sub category start  -->
+                                        <ul class="sub-sub-categories">
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
+                                        </ul>
+                                        <!-- sub sub category end  -->
+                                    </a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 3
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <!-- sub sub category start  -->
+                                        <ul class="sub-sub-categories">
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
+                                        </ul>
+                                        <!-- sub sub category end  -->
+                                    </a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Item 4
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <!-- sub sub category start  -->
+                                        <ul class="sub-sub-categories">
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas" ><a href="product_store.html" class="text-uppercase ">Sub Sub Item 1</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 2</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 3</a></li>
+                                            <li class="sub-sub-item" data-bs-dismiss="offcanvas"><a href="product_store.html" class="text-uppercase ">Sub Sub Item 4</a></li>
+                                        </ul>
+                                        <!-- sub sub category end  -->
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#"> Gallery <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="image_gallery.html" class="text-uppercase ">Image Gallery</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="video_gallery.html" class="text-uppercase ">Video Gallery</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="news.html" class="text-uppercase ">News</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Job Archive <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="career.html" class="text-uppercase ">Career</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Contact Us <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="contact_us.html" class="text-uppercase ">Contact Us</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="contact_expert.html" class="text-uppercase ">Ask an Expert</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2 " data-bs-dismiss="offcanvas">
+                                <a class="nav-link text-uppercase p-0" aria-current="page" href="#">  Services <i class="fa-solid fa-angle-down"></i></a>
+                                <!-- sub category start  -->
+                                <ul class="sub-categories">
+                                    <li class="sub-item" data-bs-dismiss="offcanvas" ><a href="service_technical_support.html" class="text-uppercase ">Technical Support</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="service_complain.html" class="text-uppercase ">Complain</a></li>
+                                    <li class="sub-item" data-bs-dismiss="offcanvas"><a href="service_software.html" class="text-uppercase ">Software</a></li>
+                                </ul>
+                            </li>
+
+                           
+                        
+                        </ul>
+
+                        <a class=" text-uppercase btn btn-primary registration" aria-current="page" href="registration.html"> Registration </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar top end-->
+
+        <!-- nav bottom start  -->
+        <nav class="fixed-bottom bg-white nav-bottom" >
+        
+            <div class="container">
+                <div class=" " >
+                    <ul class="d-flex justify-content-between " >
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-sm text-center active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm" href="about_us.html"><i class="fa-solid fa-eject"></i><span class="d-block">About Us</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="product_store.html"><i class="fa-solid fa-bars"></i><span class="d-block">Products</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="contact_us.html"><i class="fa-solid fa-address-card"></i><span class="d-block">Contact</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="registration.html"><i class="fa-solid fa-user"></i><span class="d-block">Registration</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bottom end  -->
+
+    
+    </header>
+    <!--Main Navigation end-->
+
+    
+    <!-- main content start -->
+     <main class="overflow-hidden top-margin">
+
+        <!-- top-slider start -->
+        <section class="top-slider">
+            <div class="container-flui">
+                <div class="top-slider-wrap">
+                    <!-- slide start  -->
+                    <div id="topCarousel" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            
+                          <div class="carousel-item active">
+                            <img src="assets/img/Screenshot_4.png" class="d-block w-100 slide-img" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/Screenshot_4.png" class="d-block w-100 slide-img" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/Screenshot_4.png" class="d-block w-100 slide-img" alt="...">
+                           
+                          </div>
+
+
+                        </div>
+
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> -->
+
+                        </div>
+                        <!-- slide end  -->
+
+                       
+                </div>
+            </div>
+        </section>
+        <!-- top-slider end -->
+
+
+        
+
+        <!-- categories start  -->
+        <section class="product-sliders section-padding" >
+            <div class="container p-sm-0 position-relative">
+                <!-- <h2 class="section-heading ">Our Products</h2> -->
+                <a href="product_store.html" class="view-all text-link">See All Categories <i class="fa-solid fa-arrow-right ms-2"></i></a>
+
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5  pt-3 pb-4 py-md-4">
+                    <div class="col">
+                        <div class="product-card card rounded border-0">
+                            <a href="#" class="position-relative">
+                                <img src="assets/img/c1.png" class="card-img-top portrait-img " alt="...">
+                            </a>
+                            
+                            <div class="card-body">
+                                <a href="#">
+                                    <h5 class="title text-center text-dark">Medical Equipments One</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card rounded border-0">
+                            <a href="#" class="position-relative">
+                                <img src="assets/img/c2.png" class="card-img-top portrait-img " alt="...">
+                            </a>
+                            
+                            <div class="card-body">
+                                <a href="#">
+                                    <h5 class="title text-center text-dark">Medical Equipments One</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card rounded border-0">
+                            <a href="#" class="position-relative">
+                                <img src="assets/img/c3.png" class="card-img-top portrait-img " alt="...">
+                            </a>
+                            
+                            <div class="card-body">
+                                <a href="#"> <h5 class="title text-center text-dark">Medical Equipments One</h5> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card rounded border-0">
+                            <a href="#" class="position-relative">
+                                <img src="assets/img/c4.png" class="card-img-top portrait-img " alt="...">
+                            </a>
+                            
+                            <div class="card-body">
+                                <a href="#">
+                                    <h5 class="title text-center text-dark">Medical Equipments One</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card card rounded border-0">
+                            <a href="#" class="position-relative">
+                                <img src="assets/img/c5.png" class="card-img-top portrait-img " alt="...">
+                            </a>
+                            
+                            <div class="card-body">
+                                <a href="#">
+                                    <h5 class="title text-center text-dark">Medical Equipments One</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   -->
+
+
+        <!-- service provider start  -->
+        <div class="services section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex align-items-center" style="height: 100%;">
+                            <div>
+                                <h2 class="section-title">Provider of Medical Equipment and Solutions for Hospitals, Clinics, Diagnostic and Healthcare Institutes.<h2>
+                                <a href="#" class="btn btn-outline"> Know More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 text-end">
+                        <img src="assets/img/provider.jpg"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about  -->
+        <div class="about section-padding px-2 px-md-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="ratio ratio-16x9">
+                            <video class="video" src="https://gmebd.com/wp-content/uploads/2024/10/web-1.mp4" autoplay muted="muted" loop playsinline></video>
+                          </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 section-padding">
+                        <h2 class="section-heading">Who We are?</h2>
+                        <h1 class="section-title my-5">Bangladesh Top 10 Provider of Medical Equipment Company</h1>
+                        <p class="text ">“Global Medical Engineering (BD) Ltd” is the leading medical and health equipment supplier in Bangladesh. We are incorporated as a joint-stock company,  established in 2007. Our mission is to provide the best service and widest the range of high-quality products in the health and medical sector.  We serve our customers to every corner of the country, with the excellent world-renowned medical diagnostic reagents and other consumables, used in all fields of medical sectors.</p>
+
+                        <ul class="mt-3">
+                            <li class="mb-3 text"><i class="fa-solid fa-check me-2"></i>High-quality, time & cost saving products.</li>
+                            <li class="mb-3 text"><i class="fa-solid fa-check me-2"></i>High-end facilities and infrastructure..</li>
+                            <li class="mb-3 text"><i class="fa-solid fa-check me-2"></i>We serve our customers to every corner of the country.</li>
+                            <li class="mb-3 text"><i class="fa-solid fa-check me-2"></i>Hands-on technical support whenever required.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- clients slider start  -->
+        <section class="client-slider product-sliders section-padding" >
+            <div class="container p-sm-0 position-relative">
+                <h2 class="section-heading ">Our Clients</h2>
+                <a href="product_store.html" class="view-all text-link">View All</a>
+                <div class="slider-container overflow-x-hidden pt-3 pb-4 py-md-4">
+                    <div class="slider-wrapper ">
+
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client5.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="product-card card rounded border-0">
+                            <img src="assets/img/client.png" class="card-img-top" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="prev-btn">&#8249;</button>
+                    <button class="next-btn">&#8250;</button>
+                </div>
+            </div>
+        </section>
+
+
+     </main>
+    <!-- main content end -->
+
+
+
+    <!-- footer start  -->
+    <footer class="footer pt-4 pb-3">
+        <div class="container">
+            <div class="footer-wrap">
+
+                <div class="newsletter pt-4">
+                    <div class="newsletter-card d-md-flex justify-content-between">
+                        <div>
+                            <h2 class="title mt-2">SUBSCRIBE TO OUR <span class="text-white" style="font-weight: 900;">NEWSLETTER</span></h2>
+                        </div>
+                        <div class="form">
+                            <form class="d-flex mt-1 mt-md-0 ">
+                                <div class="">
+                                  <input type="email" class="form-control py-2" id="news-email" placeholder="Enter your email address">
+                                </div>
+                                <div class="">
+                                  <button type="submit" class="btn btn-white mb-3 py-2 rounded join-now">JOIN NOW</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row g-4 g-xl-5 row-cols-1 row-cols-md-2 mb-4 mt-4">
+
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>About Our Company</h5>
+                                <p class="text">
+                                    “Global Medical Engineering (BD) Ltd” is the provider of medical equipment and solutions for Hospitals, Clinics and Healthcare Institute. We are incorporated with joint stock company, established in 2007.
+                                </p>
+                            </div>
+        
+                            <div class="col-6">
+                                <h5>Contact Details</h5>
+                                <ul class="contact mt-3 text">
+                                    <li>17/2, Topkhana Road (2nd Floor), Dhaka – 1000, Bangladesh.</li>
+                                    
+                                    <li>Mobile: +880 1711 000 000</li>
+                                    <li>Mobile: +880 1711 000 000</li>
+                                    <li>Fax: +88 02 9576881</li>
+                                    <li>Email: example@gmail.com</li>
+        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col map" style="padding: 0 80px;">
+                        <h5>Find Us</h5>
+
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42726.35441223202!2d90.38731348721025!3d23.799739168912577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1730637714455!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="d-flex justify-content-between mt-5">
+                    <div>
+                        <small class="text-center d-block" >&copy; Copyright 2024. All Rights Reserved - Empex</small>
+                    </div>
+
+                    <div class="text-white">
+                        <ul class="social-link d-inline-flex mt-2">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                        </ul>
+                        <span class="mx-3 text-white">/</span>
+                        <a href="#" class="text-white">Advertisement</a>
+                        <span class="mx-3 text-white">/</span>
+                        <a href="#" class="text-white">Privacy Policy</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+    <!-- boostrap cdn js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- boostrap js link  -->
+    <!-- <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+     
+    <!-- custom js link  -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>

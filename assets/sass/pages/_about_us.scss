@@ -1,0 +1,80 @@
+
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+.about-us{
+    .btn{padding: 10px ; 
+        &:hover{background: $primary;}
+    }
+    .about-us-nav{
+        border: 2px solid $primary;
+        padding: 30px;
+        border-radius: 4px;
+        .nav{
+            margin-top: 24px;
+            padding-left: 16px;
+            list-style-type: disc;
+            color: $primary; 
+
+            .nav-item{
+                .nav-link{
+                    color: $dark;
+                    transition: .4s;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-left: -16px;
+
+                    // &:hover{
+                    //     text-decoration: underline;
+                    //     color: $primary;
+                    // }
+                }
+            }
+        }
+    }
+
+    
+
+    .text{font-size: 16px; line-height: 30px; text-align: justify;}
+
+
+    .md_photo{
+        width: 100%;
+        max-height: 442px;
+        height: fit-content;
+        object-fit: contain;
+        border-radius: 30px;
+        margin-top: -210px;
+    }
+
+    .md-message{
+        box-shadow: $shadow-lg;
+        border-radius: 20px;
+        margin-top: 70px;
+        padding: 50px 0;
+    }
+
+    // client-card 
+    .client-card{
+        height: 100%;
+        box-shadow: $shadow-md;
+        border-radius: 19px;
+        .card-img-top{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card-title{
+            // transition: .4s;
+            font-size: 19px;
+            font-weight: 800;
+            // &:hover{
+            //     text-decoration: underline;
+            // }
+        }
+
+
+    }
+}

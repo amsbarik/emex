@@ -1,0 +1,89 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+.contact-us{
+    background: #F4F4F4;
+
+    .section-heading{
+        font-size: 36px;
+    }
+
+    .form-control{
+        border-radius: 2px;
+    }
+    .form-label{font-weight: 700;}
+
+
+
+    .map-wrap{
+        background: $primary;
+        padding: 24px 8px;
+    }
+
+    .contact-info{
+        color: $white;
+        padding: 66px 100px;
+        .text{font-size: 18px; color: $white;}
+    }
+
+    .btn{font-size: 16px; background: lighten($color: $deep, $amount: 6);
+    
+        &:hover{
+            background: $deep;
+        }
+    }
+
+
+    
+}
+
+// aks an expert page 
+.contact-expert{
+ 
+    .title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .form-control{
+        border-radius: 2px;
+    }
+    .form-label{font-weight: 700;}
+    .btn{font-size: 16px; background: lighten($color: $deep, $amount: 6);
+        &:hover{
+            background: $deep;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .contact{
+        .card-title{
+            font-size: 14px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .contact{
+        .card-title{
+            font-size: 13px;
+        }
+
+        .form-check-label{font-size: 12px;}
+    }
+    
+}
