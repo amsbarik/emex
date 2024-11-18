@@ -9,533 +9,6 @@
 
 
 
-// Animation Keyframes
-// @keyframes fall-zoom-in {
-//     0% {
-//         opacity: 0;
-//         transform: scale(0.95) translateY(-20%);
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: scale(1) translateY(0%);
-//     }
-// }
-
-// .main-categories {
-//     .nav-item {
-//         position: relative;
-//         font-size: 0.875rem;
-//         font-weight: $semibold;
-
-//         .nav-link {
-//             color: $primary;
-//             i {
-//                 font-size: 0.75rem;
-//             }
-//             transition: 0.3s;
-//             &:hover {
-//                 color: red;
-//             }
-//         }
-
-//         &:hover {
-//             .sub-categories {
-//                 display: block;
-//                 animation: swing-open 0.5s ease-out forwards;
-//             }
-//         }
-
-//         .sub-categories {
-//             position: absolute;
-//             left: 0;
-//             top: 24px;
-//             z-index: 100;
-//             background: $bg-white;
-//             border: 1px solid red;
-//             padding: 0.5rem 1rem;
-//             border-radius: 0.15rem;
-//             width: 20rem;
-//             display: none;
-//             opacity: 0;
-//             transform-origin: top center; /* Pivot point for the "swing" effect */
-//             transform: rotateX(-90deg); /* Start state: swung upward */
-
-//             .sub-item {
-//                 border-bottom: 1px dotted red;
-//                 font-size: 0.875rem;
-//                 padding: 0.5rem 0;
-//                 font-weight: $medium;
-//                 position: relative;
-
-//                 a {
-//                     color: $dark;
-//                     transition: 0.3s;
-//                     &:hover {
-//                         color: $primary;
-//                     }
-//                 }
-
-//                 &:last-child {
-//                     border-bottom: none;
-//                 }
-
-//                 i {
-//                     margin-left: 12.5rem;
-//                 }
-
-//                 &:hover {
-//                     .sub-sub-categories {
-//                         display: block;
-//                         animation: swing-open 0.5s ease-out forwards;
-//                     }
-//                 }
-
-//                 // sub-sub-categories
-//                 .sub-sub-categories {
-//                     position: absolute;
-//                     left: 18rem;
-//                     top: 0;
-//                     z-index: 100;
-//                     background: $bg-white;
-//                     border: 1px solid red;
-//                     padding: 0.5rem 1rem;
-//                     border-radius: 0.15rem;
-//                     width: 20rem;
-//                     display: none;
-//                     opacity: 0;
-//                     transform-origin: top center; /* Pivot for swing */
-//                     transform: rotateX(-90deg);
-
-//                     .sub-sub-item {
-//                         border-bottom: red;
-//                         font-size: 0.875rem;
-//                         padding: 0.5rem 0;
-//                         font-weight: $medium;
-//                         position: relative;
-
-//                         a {
-//                             color: $dark;
-//                             transition: 0.3s;
-//                             &:hover {
-//                                 color: $primary;
-//                             }
-//                         }
-
-//                         &:last-child {
-//                             border-bottom: none;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// // Animation Keyframes
-// @keyframes swing-open {
-//     0% {
-//         opacity: 0;
-//         transform: rotateX(-90deg); /* Fully closed, invisible */
-//     }
-//     50% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: rotateX(0deg); /* Fully open */
-//     }
-// }
-
-
-.main-categories {
-    .nav-item {
-        position: relative;
-        font-size: 0.875rem;
-        font-weight: $semibold;
-
-        .nav-link {
-            color: $primary;
-            i {
-                font-size: 0.75rem;
-            }
-            transition: 0.3s;
-            &:hover {
-                color: red;
-            }
-        }
-
-        &:hover {
-            .sub-categories {
-                display: block;
-                animation: swing-open-delayed 0.6s ease-out forwards;
-            }
-        }
-
-        .sub-categories {
-            position: absolute;
-            left: 0;
-            top: 24px;
-            z-index: 100;
-            background: $bg-white;
-            border: 1px solid red;
-            padding: 0.5rem 1rem;
-            border-radius: 0.15rem;
-            width: 20rem;
-            display: none;
-            opacity: 0;
-            transform-origin: top left; /* Pivot shifted for corner-first reveal */
-            transform: rotateX(-90deg) skewX(10deg); /* Start state */
-
-            .sub-item {
-                border-bottom: 1px dotted red;
-                font-size: 0.875rem;
-                padding: 0.5rem 0;
-                font-weight: $medium;
-                position: relative;
-
-                a {
-                    color: $dark;
-                    transition: 0.3s;
-                    &:hover {
-                        color: $primary;
-                    }
-                }
-
-                &:last-child {
-                    border-bottom: none;
-                }
-
-                i {
-                    margin-left: 12.5rem;
-                }
-
-                &:hover {
-                    .sub-sub-categories {
-                        display: block;
-                        animation: swing-open-delayed 0.6s ease-out forwards;
-                    }
-                }
-
-                // sub-sub-categories
-                .sub-sub-categories {
-                    position: absolute;
-                    left: 18rem;
-                    top: 0;
-                    z-index: 100;
-                    background: $bg-white;
-                    border: 1px solid red;
-                    padding: 0.5rem 1rem;
-                    border-radius: 0.15rem;
-                    width: 20rem;
-                    display: none;
-                    opacity: 0;
-                    transform-origin: top left; /* Pivot for corner-first */
-                    transform: rotateX(-90deg) skewX(10deg);
-
-                    .sub-sub-item {
-                        border-bottom: red;
-                        font-size: 0.875rem;
-                        padding: 0.5rem 0;
-                        font-weight: $medium;
-                        position: relative;
-
-                        a {
-                            color: $dark;
-                            transition: 0.3s;
-                            &:hover {
-                                color: $primary;
-                            }
-                        }
-
-                        &:last-child {
-                            border-bottom: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Updated Animation Keyframes
-@keyframes swing-open-delayed {
-    0% {
-        opacity: 0;
-        transform: rotateX(-90deg) skewX(10deg); /* Closed, skewed slightly */
-    }
-    50% {
-        opacity: 0.8;
-        transform: rotateX(-20deg) skewX(5deg); /* Half-open, still skewed */
-    }
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg) skewX(0deg); /* Fully open, flat */
-    }
-}
-
-
-
-// .main-categories {
-//     .nav-item {
-//         position: relative;
-//         font-size: 0.875rem;
-//         font-weight: $semibold;
-
-//         .nav-link {
-//             color: $primary;
-//             i {
-//                 font-size: 0.75rem;
-//             }
-//             transition: 0.3s;
-//             &:hover {
-//                 color: red;
-//             }
-//         }
-
-//         &:hover {
-//             .sub-categories {
-//                 display: block;
-//                 animation: swing-open-horizontal 0.6s ease-out forwards;
-//             }
-//         }
-
-//         .sub-categories {
-//             position: absolute;
-//             left: 0;
-//             top: 24px;
-//             z-index: 100;
-//             background: $bg-white;
-//             border: 1px solid red;
-//             padding: 0.5rem 1rem;
-//             border-radius: 0.15rem;
-//             width: 20rem;
-//             display: none;
-//             opacity: 0;
-//             transform-origin: left center; /* Horizontal pivot at the left edge */
-//             transform: rotateY(-90deg) skewY(10deg); /* Start with a horizontal swing */
-
-//             .sub-item {
-//                 border-bottom: 1px dotted red;
-//                 font-size: 0.875rem;
-//                 padding: 0.5rem 0;
-//                 font-weight: $medium;
-//                 position: relative;
-
-//                 a {
-//                     color: $dark;
-//                     transition: 0.3s;
-//                     &:hover {
-//                         color: $primary;
-//                     }
-//                 }
-
-//                 &:last-child {
-//                     border-bottom: none;
-//                 }
-
-//                 i {
-//                     margin-left: 12.5rem;
-//                 }
-
-//                 &:hover {
-//                     .sub-sub-categories {
-//                         display: block;
-//                         animation: swing-open-horizontal 0.6s ease-out forwards;
-//                     }
-//                 }
-
-//                 // sub-sub-categories
-//                 .sub-sub-categories {
-//                     position: absolute;
-//                     left: 18rem;
-//                     top: 0;
-//                     z-index: 100;
-//                     background: $bg-white;
-//                     border: 1px solid red;
-//                     padding: 0.5rem 1rem;
-//                     border-radius: 0.15rem;
-//                     width: 20rem;
-//                     display: none;
-//                     opacity: 0;
-//                     transform-origin: left center; /* Horizontal pivot */
-//                     transform: rotateY(-90deg) skewY(10deg);
-
-//                     .sub-sub-item {
-//                         border-bottom: red;
-//                         font-size: 0.875rem;
-//                         padding: 0.5rem 0;
-//                         font-weight: $medium;
-//                         position: relative;
-
-//                         a {
-//                             color: $dark;
-//                             transition: 0.3s;
-//                             &:hover {
-//                                 color: $primary;
-//                             }
-//                         }
-
-//                         &:last-child {
-//                             border-bottom: none;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// // Updated Keyframes for Horizontal Swing
-// @keyframes swing-open-horizontal {
-//     0% {
-//         opacity: 0;
-//         transform: rotateY(-90deg) skewY(10deg); /* Fully closed, horizontal skew */
-//     }
-//     50% {
-//         opacity: 0.8;
-//         transform: rotateY(-20deg) skewY(5deg); /* Half-open */
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: rotateY(0deg) skewY(0deg); /* Fully open */
-//     }
-// }
-
-
-
-// .main-categories {
-//     .nav-item {
-//         position: relative;
-//         font-size: 0.875rem;
-//         font-weight: $semibold;
-
-//         .nav-link {
-//             color: $primary;
-//             i {
-//                 font-size: 0.75rem;
-//             }
-//             transition: 0.3s;
-//             &:hover {
-//                 color: red;
-//             }
-//         }
-
-//         &:hover {
-//             .sub-categories {
-//                 display: block;
-//                 animation: swing-open-diagonal 0.6s ease-out forwards;
-//             }
-//         }
-
-//         .sub-categories {
-//             position: absolute;
-//             left: 0;
-//             top: 24px;
-//             z-index: 100;
-//             background: $bg-white;
-//             border: 1px solid red;
-//             padding: 0.5rem 1rem;
-//             border-radius: 0.15rem;
-//             width: 20rem;
-//             display: none;
-//             opacity: 0;
-//             transform-origin: top left; /* Pivot for the diagonal swing */
-//             transform: rotate(-45deg) skew(20deg); /* Start state */
-
-//             .sub-item {
-//                 border-bottom: 1px dotted red;
-//                 font-size: 0.875rem;
-//                 padding: 0.5rem 0;
-//                 font-weight: $medium;
-//                 position: relative;
-
-//                 a {
-//                     color: $dark;
-//                     transition: 0.3s;
-//                     &:hover {
-//                         color: $primary;
-//                     }
-//                 }
-
-//                 &:last-child {
-//                     border-bottom: none;
-//                 }
-
-//                 i {
-//                     margin-left: 12.5rem;
-//                 }
-
-//                 &:hover {
-//                     .sub-sub-categories {
-//                         display: block;
-//                         animation: swing-open-diagonal 0.6s ease-out forwards;
-//                     }
-//                 }
-
-//                 // sub-sub-categories
-//                 .sub-sub-categories {
-//                     position: absolute;
-//                     left: 18rem;
-//                     top: 0;
-//                     z-index: 100;
-//                     background: $bg-white;
-//                     border: 1px solid red;
-//                     padding: 0.5rem 1rem;
-//                     border-radius: 0.15rem;
-//                     width: 20rem;
-//                     display: none;
-//                     opacity: 0;
-//                     transform-origin: top left; /* Pivot for diagonal swing */
-//                     transform: rotate(-45deg) skew(20deg);
-
-//                     .sub-sub-item {
-//                         border-bottom: red;
-//                         font-size: 0.875rem;
-//                         padding: 0.5rem 0;
-//                         font-weight: $medium;
-//                         position: relative;
-
-//                         a {
-//                             color: $dark;
-//                             transition: 0.3s;
-//                             &:hover {
-//                                 color: $primary;
-//                             }
-//                         }
-
-//                         &:last-child {
-//                             border-bottom: none;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// // Keyframes for Top-Left to Bottom-Right Animation
-// @keyframes swing-open-diagonal {
-//     0% {
-//         opacity: 0;
-//         transform: rotate(45deg) skew(100deg); /* Fully closed, starting at top-left */
-//     }
-//     50% {
-//         opacity: 0.8;
-//         transform: rotate(20deg) skew(10deg); /* Midpoint */
-//     }
-//     100% {
-//         opacity: 1;
-//         transform: rotate(0deg) skew(0deg); /* Fully open, at bottom-right */
-//     }
-// }
-
-
-
-
-
-
-
-
 // header css start 
 header{background: $primary; position: fixed; top: 0; width: 100%; left: 0; z-index: 1000;}
 .registration{font-size: 14px;}
@@ -572,114 +45,148 @@ header{background: $primary; position: fixed; top: 0; width: 100%; left: 0; z-in
 
         .btn{border: 1px solid $white}
        
-
-        // .search-sm{
-        //     input{font-size: .7rem; border: none; color: darken($color: $light, $amount: 18); 
-        //       &:focus{border-bottom: 1px solid darken($color: $light, $amount: 7);}
-        //     }
-        //     .search-btn{
-        //       border: none;
-        //       color: darken($color: $light, $amount: 24);
-        //       background: none;
-        //     }
-        //   }
-
-        // .main-categories{
-
-        //     .nav-item{
-        //         font-size: .875rem;
-        //         font-weight: $semibold;
-        //         // padding: 12px 0;
-        //         position: relative;
-        //         .nav-link{
-        //             color: $primary;
-        //             // letter-spacing: 2px;
-        //             i{font-size: .75rem;}
-        //             transition: 0.3s;
-        //             &:hover{
-        //                 color: darken($color: $primary, $amount: 10);
-        //             }
-        //         }
-        //         &:hover{
-        //             .sub-categories{
-        //                 display: block;
-        //             }
-        //         }
-
-        //         .sub-categories{
-        //             position: absolute;
-        //             left: 0;
-        //             top: 24px;
-        //             z-index: 100;
-        //             background: $bg-white;
-        //             border: 1px solid darken($color: $light, $amount: 10);
-        //             padding: .5rem 1rem;
-        //             border-radius: .15rem;
-        //             width: 20rem;
-        //             display: none;
-                    
-        //             .sub-item{
-        //                 border-bottom: 1px dotted lighten($color: $dark, $amount: 20);
-        //                 font-size: .875rem;
-        //                 padding: .5rem 0;
-        //                 font-weight: $medium;
-        //                 position: relative;
-        //                 a{color: $dark ; transition: .3s;
-        //                     &:hover{
-        //                         color: $primary;
-        //                     }
-        //                 }
-        //                 &:last-child{
-        //                     border-bottom: none;
-        //                 }
-        //                 i{margin-left: 12.5rem;}
-                        
-        //                 &:hover{
-        //                     .sub-sub-categories{
-        //                         display: block;
-        //                     }
-        //                 }
-
-        //                 // sub-sub-categories 
-        //                 .sub-sub-categories{
-        //                     position: absolute;
-        //                     left: 18rem;
-        //                     top: 0px;
-        //                     z-index: 100;
-        //                     background: $bg-white;
-        //                     border: 1px solid darken($color: $light, $amount: 10);
-        //                     padding: .5rem 1rem;
-        //                     border-radius: .15rem;
-        //                     width: 20rem;
-        //                     display: none;
-
-        //                     .sub-sub-item{
-        //                         border-bottom: 1px dotted lighten($color: $dark, $amount: 20);
-        //                         font-size: .875rem;
-        //                         padding: .5rem 0;
-        //                         font-weight: $medium;
-        //                         position: relative;
-        //                         a{color: $dark ; transition: .3s;
-        //                             &:hover{
-        //                                 color: $primary;
-        //                             }
-        //                         }
-        //                         &:last-child{
-        //                             border-bottom: none;
-        //                         }
-        //                     }
-        //                 }
-                        
-        //             }
-        //         }
-        //     }
-        // }
         
+        .main-categories {
+            .nav-item {
+                position: relative;
+                font-size: 0.875rem;
+                font-weight: $semibold;
 
-        // try 
+                .nav-link {
+                    color: $primary;
+                    i {
+                        font-size: 0.75rem;
+                    }
+                    transition: 0.3s;
+                    &:hover {
+                        color: red;
 
+                        border-bottom: 3px solid red;
+                    }
+                }
 
+                &:hover {
+                    .sub-categories {
+                        display: block;
+                        animation: swing-open-delayed 0.6s ease-out forwards;
+                    }
+                }
 
+                .sub-categories {
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    z-index: 100;
+                    background: $bg-white;
+                    // border: 1px solid red;
+                    box-shadow: $shadow-lg;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.15rem;
+                    width: 20rem;
+                    display: none;
+                    opacity: 0;
+                    transform-origin: top right; /* Pivot shifted for corner-first reveal */
+                    transform: rotateX(-90deg) skewX(10deg); /* Start state */
+
+                    .sub-item {
+                        font-size: 13px;
+                        padding: 0.5rem 0;
+                        font-weight: 400;
+                        position: relative;
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        a {
+                            color: $dark;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $primary;
+                                font-weight: 500;
+                            }
+                        }
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        i {
+                            transition: .4s;
+                            position: absolute;
+                            right: 16px;
+                        }
+                        transition: .4s;
+                        &:hover {
+                            .sub-sub-categories {
+                                display: block;
+                                animation: swing-open-delayed 0.6s ease-out forwards;
+                            }
+                            i {
+                                right: 10px;
+                            }
+                        }
+
+                        // sub-sub-categories
+                        .sub-sub-categories {
+                            position: absolute;
+                            left: 18rem;
+                            top: 0;
+                            z-index: 100;
+                            background: $bg-white;
+                            box-shadow: $shadow-lg;
+                            padding: 0.5rem 1rem;
+                            border-radius: 0.15rem;
+                            width: 20rem;
+                            display: none;
+                            opacity: 0;
+                            transform-origin: top right; /* Pivot for corner-first */
+                            transform: rotateX(-90deg) skewX(10deg);
+
+                            .sub-sub-item {
+                                font-size: 13px;
+                                padding: 0.5rem 0;
+                                font-weight: $medium;
+                                position: relative;
+
+                                a {
+                                    color: $dark;
+                                    transition: 0.3s;
+                                    &:hover {
+                                        color: $primary;
+                                    }
+                                }
+
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Updated Animation Keyframes
+        @keyframes swing-open-delayed {
+            0% {
+                opacity: 0;
+                transform: rotateX(-90deg) skewX(10deg); /* Closed, skewed slightly */
+            }
+            50% {
+                opacity: 0.8;
+                transform: rotateX(-20deg) skewX(5deg); /* Half-open, still skewed */
+            
+            }
+            99% {
+                opacity: 1;
+                transform: rotateX(5deg) skewX(-5deg); /* Fully open, flat */
+            }
+            100% {
+                opacity: 1;
+                transform: rotateX(0deg) skewX(0deg); /* Fully open, flat */
+            
+            }
+        }
         
     }
 
