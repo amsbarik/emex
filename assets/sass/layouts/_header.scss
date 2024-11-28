@@ -177,10 +177,6 @@ header{background: $primary; position: fixed; top: 0; width: 100%; left: 0; z-in
                 transform: rotateX(-20deg) skewX(5deg); /* Half-open, still skewed */
             
             }
-            99% {
-                opacity: 1;
-                transform: rotateX(5deg) skewX(-5deg); /* Fully open, flat */
-            }
             100% {
                 opacity: 1;
                 transform: rotateX(0deg) skewX(0deg); /* Fully open, flat */
